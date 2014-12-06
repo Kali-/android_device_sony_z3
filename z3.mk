@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.sony.usb.rc:root/init.sony.usb.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/d6502.sh:d6502.sh
+    $(LOCAL_PATH)/recovery/d6603.sh:d6603.sh
 
 # Audio
 PRODUCT_COPY_FILES += \
