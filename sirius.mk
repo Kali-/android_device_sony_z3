@@ -36,9 +36,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/d6502.sh:d6502.sh
-
 # Audio
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
@@ -47,10 +44,6 @@ PRODUCT_COPY_FILES += \
 # Thermal manager
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/thermanager.xml:system/etc/thermanager.xml
-
-# Wifi
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
